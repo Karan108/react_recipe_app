@@ -1,0 +1,27 @@
+.cooking_container {
+    padding: 20px;
+}
+
+.banner_image {
+    width: 40%;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    padding: 5px;
+}
+
+.details>p {
+    margin-left: 10px;
+    font-size: 15px;
+    color: black;
+}

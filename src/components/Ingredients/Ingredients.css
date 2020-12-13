@@ -1,0 +1,22 @@
+.Ingredients__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+.ingredient__item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.ingredient__item img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.ingredient__item span {
+    padding-left: 10px;
+    /* font-size: small; */
+}

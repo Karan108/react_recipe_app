@@ -1,0 +1,18 @@
+.details,
+.time,
+.serving {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.time>p,
+.serving>p {
+    padding-left: 10px;
+}
+
+.Recipe {
+    width: 345px;
+    margin: 40px;
+}
