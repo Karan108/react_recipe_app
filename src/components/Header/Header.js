@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Header.css";
 function Header({ handleSearch, recipesPage, handleRecipesPage }) {
     const [search, setsearch] = useState("");
-
+    const backBtn = '<< Back To Home';
     const handleForm = (e) => {
         e.preventDefault();
         handleSearch(search);
@@ -19,7 +19,7 @@ function Header({ handleSearch, recipesPage, handleRecipesPage }) {
                 <h1>Food Recipes</h1>
             </div>
             <div className='search'>
-                {recipesPage ? <Link to='/' onClick={handleClick}>Back to Home</Link> :
+                {recipesPage ? <Link to='/' onClick={handleClick}>{backBtn}</Link> :
                     <form onSubmit={handleForm} className='search_form'>
                         <input type="text" value={search} onChange={(e) => setsearch(e.target.value)} placeholder='Search your recipe here...' />
                         <button>Search</button>
