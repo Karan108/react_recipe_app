@@ -6,10 +6,9 @@ import Ingredients from '../Ingredients/Ingredients';
 import "./Cooking.css";
 function Cooking() {
     const [data, setData] = useState({})
-    const API_KEY = "62d5f4eaadff4cb6929f54e769c7e3f2"
     let { recipeID } = useParams();
     useEffect(() => {
-        Axios.get(`https://api.spoonacular.com/recipes/${recipeID}/information?apiKey=${API_KEY}`).then(res => {
+        Axios.get(`https://api.spoonacular.com/recipes/${recipeID}/information?apiKey=${process.env.REACT_APP_API_KEY}`).then(res => {
             const recipes = res.data
             setData(recipes);
         })

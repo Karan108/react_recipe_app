@@ -61,13 +61,15 @@
         min-height: 100px;
         margin-bottom: 0;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header__branding {
         float: none;
         text-align: center;
     }
-
 }
 
 .header__backToHome {

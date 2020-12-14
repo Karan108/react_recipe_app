@@ -15,6 +15,7 @@
     flex-direction: column;
 }
 
+
 h2 {
     color: #6C757D;
     text-transform: uppercase;
@@ -24,6 +25,16 @@ h2 {
     display: flex;
     align-items: center;
     padding: 5px;
+}
+
+@media (max-width:960px) {
+    .cooking__details {
+        flex-direction: column;
+    }
+
+    .cooking__banner_image {
+        width: 100%;
+    }
 }
 
 p {
