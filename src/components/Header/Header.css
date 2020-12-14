@@ -72,6 +72,24 @@
     }
 }
 
+@media (max-width:600px) {
+    .header {
+        min-height: 100px;
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .header__search {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
 .header__backToHome {
     padding: 5px;
     border: solid 1px #6C757D;
