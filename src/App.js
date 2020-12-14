@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Cooking from './components/Cooking/Cooking';
 import Footer from './components/Footer/Footer';
 function App() {
-  const [search, setSearch] = useState('cream');
+  const [search, setSearch] = useState('pasta');
   const handleSearch = (value) => {
     setSearch(value);
   }
@@ -16,16 +16,14 @@ function App() {
   }
   return (
     <Router>
-      <div className="App overlay">
+      <div className="App">
         {/* Header */}
         <Header handleSearch={handleSearch} recipesPage={recipesPage} handleRecipesPage={handleRecipesPage} />
       </div>
       <Switch>
         <Route path="/" exact >
           {/* Recipes */}
-          <div className="recipe__container">
-            <Home search={search} handleRecipesPage={handleRecipesPage} />
-          </div>
+          <Home search={search} handleRecipesPage={handleRecipesPage} />
         </Route>
         <Route path='/recipe/:recipeID'>
           {/* Recipe */}

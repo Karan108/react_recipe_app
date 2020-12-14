@@ -1,14 +1,14 @@
-.cooking_container {
+.cooking__container {
     padding: 20px;
 }
 
-.banner_image {
+.cooking__banner_image {
     width: 40%;
     height: 50vh;
     object-fit: contain;
 }
 
-.image {
+.cooking__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,9 @@ h2 {
     text-transform: uppercase;
 }
 
-.details {
+.cooking__details {
     display: flex;
+    align-items: center;
     padding: 5px;
 }
 
@@ -31,7 +32,7 @@ p {
     color: #4E4D4D;
 }
 
-.ingTitle {
+.cooking__ingTitle {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -5,8 +5,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import "./Footer.css";
 function Footer() {
     return (
-        <div className="footer-container">
-            <h3>Made with <span className="heart" aria-label="heart" role='img'>❤️</span> by Karan</h3>
+        <div className="footer__container">
+            <h3>Made with <span className="footer__heart" aria-label="heart" role='img'>❤️</span> by Karan</h3>
             <div>
                 <a href="https://www.linkedin.com/in/karan-raj-230028143" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
                 <a href="https://www.facebook.com/karan.raj.33633344/" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>

@@ -1,4 +1,4 @@
-.Ingredients__wrapper {
+.ingredients__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 20px;
@@ -18,5 +18,4 @@
 
 .ingredient__item span {
     padding-left: 10px;
-    /* font-size: small; */
 }

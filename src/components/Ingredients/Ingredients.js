@@ -2,9 +2,9 @@ import React from 'react'
 import './Ingredients.css'
 function Ingredients({ ingredients }) {
     return (
-        <div className='Ingredients__wrapper'>
+        <div className='ingredients__wrapper'>
             {
-                ingredients.map(ing => <Ingredient ingredient={ing} />)
+                ingredients.map((ing, index) => <Ingredient key={index} ingredient={ing} />)
             }
         </div>
     )

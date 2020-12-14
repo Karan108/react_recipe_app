@@ -8,13 +8,14 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import "./Recipe.css";
 import { Link } from 'react-router-dom';
 
-export default function Recipe({ image, title, id, time, serving, recipePageFunction }) {
+export default function Recipe({ image, title, id, time, serving, likes, recipePageFunction }) {
 
     return (
-        <Card className='Recipe'>
+        <Card className='recipe'>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -25,23 +26,27 @@ export default function Recipe({ image, title, id, time, serving, recipePageFunc
                     <Typography gutterBottom variant="h5" component="h2">
                         {title}
                     </Typography>
-                    <div className="details">
-                        <div className="time">
+                    <div className="recipe__details">
+                        <div className="recipe__details__time">
                             <AccessTimeIcon />
                             <p>{time}mins</p>
                         </div>
-                        <div className="serving">
+                        <div className="recipe__details__serving">
                             <PeopleAltIcon />
                             <p>{serving}</p>
+                        </div>
+                        <div className="recipe__details__likes">
+                            <FavoriteIcon />
+                            <p>{likes}</p>
                         </div>
                     </div>
                 </CardContent>
             </CardActionArea>
-            <CardActions className='buttonDiv'>
+            <CardActions className='recipe__buttonDiv'>
                 <Link to={{
                     pathname: `/recipe/${id}`
                 }}>
-                    <Button size="small" color="primary" onClick={() => recipePageFunction()} className='viewRecipe'>
+                    <Button size="small" color="primary" onClick={() => recipePageFunction()} className='recipe__buttonDiv__viewRecipe'>
                         View Recipe
         </Button>
                 </Link>

@@ -1,23 +1,25 @@
-.details,
-.time,
-.serving,
-.buttonDiv {
+.recipe__details,
+.recipe__details__time,
+.recipe__details__serving,
+.recipe__details__likes,
+.recipe__buttonDiv {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-.time>p,
-.serving>p {
-    padding-left: 10px;
+.recipe__details__time>p,
+.recipe__details__serving>p,
+.recipe__details__likes>p {
+    padding-left: 8px;
 }
 
-.Recipe {
+.recipe {
     width: 345px;
     margin: 40px;
 }
 
-.viewRecipe {
+.recipe__buttonDiv__viewRecipe {
     padding: 5px;
     border: solid 1px #7F7FFF !important;
     border-radius: 10px;

@@ -16,12 +16,12 @@ function Home({ search, handleRecipesPage }) {
         handleRecipesPage()
     }
     return (
-        <div className="recipe_container">
+        <div className="Home__recipe_container">
             {recipes.loading ? (
                 <h2>Loading...</h2>
             ) : recipes.error ? (
                 <h2>{recipes.error}</h2>
-            ) : recipes.map(recipe => (<Recipe key={recipe.id} id={recipe.id} image={recipe.image} title={recipe.title} time={recipe.readyInMinutes} serving={recipe.servings} recipePageFunction={recipePageFunction} />))}
+            ) : recipes.map(recipe => (<Recipe key={recipe.id} id={recipe.id} image={recipe.image} title={recipe.title} time={recipe.readyInMinutes} serving={recipe.servings} likes={recipe.aggregateLikes} recipePageFunction={recipePageFunction} />))}
         </div>
     )
 }

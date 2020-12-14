@@ -14,13 +14,13 @@ function Header({ handleSearch, recipesPage, handleRecipesPage }) {
     }
 
     return (
-        <header className="nav">
-            <div className="branding">
-                <Link to='/'><h1>Food Recipes</h1></Link>
+        <header className="header">
+            <div className="header__branding">
+                <Link to='/' onClick={handleClick}><h1>Food Recipes</h1></Link>
             </div>
-            <div className='search'>
-                {recipesPage ? <Link to='/' className='backToHome' onClick={handleClick}>{backBtn}</Link> :
-                    <form onSubmit={handleForm} className='search_form'>
+            <div className='header__search'>
+                {recipesPage ? <Link to='/' className='header__backToHome' onClick={handleClick}>{backBtn}</Link> :
+                    <form onSubmit={handleForm} className='header__search_form'>
                         <input type="text" value={search} onChange={(e) => setsearch(e.target.value)} placeholder='Search your recipe here...' />
                         <button>Search</button>
                     </form>
