@@ -1,10 +1,10 @@
 .details,
 .time,
-.serving {
+.serving,
+.buttonDiv {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* padding: 10px; */
 }
 
 .time>p,
@@ -15,4 +15,10 @@
 .Recipe {
     width: 345px;
     margin: 40px;
+}
+
+.viewRecipe {
+    padding: 5px;
+    border: solid 1px #7F7FFF !important;
+    border-radius: 10px;
 }

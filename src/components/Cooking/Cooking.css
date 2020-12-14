@@ -15,13 +15,24 @@
     flex-direction: column;
 }
 
+h2 {
+    color: #6C757D;
+    text-transform: uppercase;
+}
+
 .details {
     display: flex;
     padding: 5px;
 }
 
-.details>p {
+p {
     margin-left: 10px;
     font-size: 15px;
-    color: black;
+    color: #4E4D4D;
+}
+
+.ingTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

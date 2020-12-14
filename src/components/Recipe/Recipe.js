@@ -37,11 +37,11 @@ export default function Recipe({ image, title, id, time, serving, recipePageFunc
                     </div>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className='buttonDiv'>
                 <Link to={{
                     pathname: `/recipe/${id}`
                 }}>
-                    <Button size="small" color="primary" onClick={() => recipePageFunction()}>
+                    <Button size="small" color="primary" onClick={() => recipePageFunction()} className='viewRecipe'>
                         View Recipe
         </Button>
                 </Link>

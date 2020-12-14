@@ -13,7 +13,7 @@ function Ingredients({ ingredients }) {
 function Ingredient({ ingredient }) {
     return (<div className='ingredient__item'>
         <img src={`https://spoonacular.com/cdn/ingredients_100x100/${ingredient.image}`} alt='ingredient' />
-        <span>{ingredient.name}</span>
+        <span style={{ color: '#4E4D4D' }}>{ingredient.name}</span>
     </div>)
 }
 export default Ingredients

@@ -44,12 +44,6 @@
     font-size: 1rem;
 }
 
-/* .search_form {
-    background-color: #6c757d;
-    border-radius: 5px;
-    margin-right: 10px;
-} */
-
 .search_form>input {
     color: black;
     border: none;
@@ -82,4 +76,10 @@
         text-align: center;
     }
 
+}
+
+.backToHome {
+    padding: 5px;
+    border: solid 1px #FF7F7F;
+    border-radius: 10px;
 }

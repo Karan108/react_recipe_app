@@ -29,9 +29,15 @@ function Cooking() {
                 </div>
             </div>
             {/* Ingredients */}
+            <div className="ingTitle">
+                <h2>Ingredients</h2>
+            </div>
             <Ingredients ingredients={data.extendedIngredients || []} />
             {/* Instructions */}
-            <p dangerouslySetInnerHTML={{ __html: data.instructions }}></p>
+            <div className="ingTitle">
+                <h2>Instructions</h2>
+            </div>
+            <p style={{ marginTop: '20px' }} dangerouslySetInnerHTML={{ __html: data.instructions }}></p>
         </Container>
     )
 }
